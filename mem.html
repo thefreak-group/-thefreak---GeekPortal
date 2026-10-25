@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thefreak | Welcome</title>
+    <style>
+        /* Стили оригинального Thefreak */
+        body {
+            background-color: #FFFFFF;
+            color: #000000;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 11px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Растягивает body на всю высоту экрана */
+        }
+        a {
+            color: #5f5e60;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Шапка сайта */
+        header {
+            background-color: #5f5e60;
+            padding: 5px 0;
+            border-bottom: 2px solid #293E6A;
+        }
+        .header-container {
+            width: 760px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            position: relative;
+        }
+        .logo {
+            color: #FFFFFF;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: -1px;
+        }
+        .header-face {
+            color: #8B9DC3;
+            font-family: monospace;
+            font-size: 9px;
+            white-space: pre;
+            line-height: 7px;
+            position: absolute;
+            left: 170px;
+            bottom: -5px;
+        }
+        .top-nav {
+            font-size: 10px;
+        }
+        .top-nav a {
+            color: #FFFFFF;
+            margin-left: 10px;
+        }
+
+        /* Главный контейнер */
+        .main-container {
+            width: 760px;
+            margin: 15px auto;
+            display: flex;
+            border: 1px solid #5f5e60;
+            flex-grow: 1; /* Позволяет основному контенту занимать все свободное место, выталкивая футер вниз */
+        }
+        
+
+        /* Левая колонка навигации */
+        nav {
+            width: 140px;
+            background-color: #F7F7F7;
+            border-right: 1px solid #5f5e60;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin-bottom: 5px;
+            border-bottom: 1px dashed #C0C0C0;
+            padding-bottom: 3px;
+        }
+
+        /* Центральный контент */
+        .content {
+            width: 620px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        /* Приветственный блок */
+        .welcome-box {
+            border: 1px solid #5f5e60;
+            margin-bottom: 15px;
+        }
+        .box-header {
+            background-color: #5f5e60;
+            color: #FFFFFF;
+            padding: 4px 8px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        .box-body {
+            padding: 10px;
+            line-height: 1.5;
+        }
+        .box-body h2 {
+            font-size: 14px;
+            margin-top: 0;
+            color: #5f5e60;
+        }
+
+        /* Кнопки и формы в стиле 2004 */
+        .btn-container {
+            margin-top: 15px;
+            text-align: center;
+        }
+        .btn {
+            background-color: #F7F7F7;
+            border: 1px solid #293E6A;
+            color: #5f5e60;
+            padding: 3px 10px;
+            font-weight: bold;
+            font-size: 11px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+        .btn:hover {
+            background-color: #EEEEEE;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка Thefreak -->
+    <header>
+        <div class="header-container">
+            <div class="logo">[thefreak]</div>
+            <!-- Пасхалка: знаменитый бинарный код-силуэт в шапке -->
+            <div class="header-face">
+ 1010001
+ 0101101
+ 1001010
+            </div>
+            <div class="top-nav">
+                <a href="about.html">about</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной каркас -->
+    <div class="main-container">
+        
+        <!-- Левое меню (тогда еще без личных профилей для гостей) -->
+        <nav>
+            <ul>
+                <li><a href="index.html">welcome</a></li>
+                <li><a href="nice bro.html">nice bro</a></li>
+                <li><a href="gm.html">comics retrospective</a></li>
+                <li><a href="mem.html">mem review</a></li>
+                <li><a href="diary.html">diary</a></li>
+            </ul>
+        </nav>
+
+  <div class="container">
+    <!-- Блок поиска -->
+    <div id="search-box-container">
+      <input type="text" id="search-input" placeholder="Поиск всего, чего угодно...">
+      <div id="search-hint" style="margin-top:6px; font-size:12px; color:#666;">Поиск по названиям и описаниям</div>
+    </div>
+
+    <!-- Tony Hawk’s Pro Skater 2 -->
+    <section id="Tony Hawk’s Pro Skater 2" class="comics-section">
+      <h2>Tony Hawk’s Pro Skater 2</h2>
+      <div class="comics-image-wrapper">
+        <!-- Сюда подставляется картинка. Если картинки нет, будет рамка с фоном -->
+        <img src="THK2.png" alt="Обложка" class="comics-image">
+      </div>
+      <p><strong>Тема и описание:</strong> Tony Hawk’s Pro Skater 2 - видеоигра в жанре спортивного симулятора скейтбординга, разработанная компанией Neversoft и выпущенная Activision 19 сентября 2000 года для Sony PlayStation, вторая по счёту в серии Tony Hawk. В дальнейшем игра была портирована на Nintendo 64, Dreamcast, Game Boy Advance, Mac OS и Windows. Также игра была адаптирована под Game Boy Color.В игре представлены тринадцать реально существующих профессиональных скейтбордистов:Тони Хоук,
+Боб Бернквист,
+Стив Кабальеро,
+Карим Кэмпбелл,
+Руне Глифберг,
+Эрик Костон,
+Баки Ласек,
+Родни Маллен,
+Чад Маска,
+Эндрю Рейнольдс,
+Джефф Роули,
+Элисса Стимер,
+Джейми Томас.
+
+Секретные персонажи:
+
+Офицер Дик,
+Рядовой Каррера,
+Человек-паук,
+Мак Сквиб (Тони Хоук в стиле 1980-х годов),
+Минди (только в версии для Game Boy Advance),
+Трикси (только версии для Xbox/Dreamcast).</p>
+      <p><strong>Рецензия:</strong> Мы можем выделить Tony Hawk’s Pro Skater 2 за хорошую физику, приятный саундтрек, локации и сам геймплей. Мы ставим Тони Хоуку 9/10.</p>
+      <ul>
+      </ul>
+    </section>
+
+    <!-- I AM. SOUNDTRACK (Shadow the hedgehog) -->
+    <section id="I AM. SOUNDTRACK (Shadow the hedgehog)" class="comics-section">
+      <h2>I AM. SOUNDTRACK (Shadow the hedgehog)</h2>
+      <div class="comics-image-wrapper">
+        <img src="I AM.png" alt="Логотип " class="comics-image">
+      </div>
+      <p><strong>Тема и описание:</strong>Этот саунд называют самой тяжелой темой в музыке о Сонике. Воспроизведен трек был в Shadow the hedgehog, игре про ежа Shadow, но где если не там. В игре где ты с пушкой на перевес уничтожаешь темных гадов под рок.</p>
+      <p><strong>Рецензия:</strong> Единственный минус в данном музле что текст как и сама мелодия может приресться, да этоо не мешает ей звучать хорошо, но даже спустя года саунд может поднодоедать. Мы ставим данному саундтреку 7/10.</p>
+      <ul>
+      </ul>
+    </section>
+
+    <!-- Homestuck -->
+    <section id="Homestuck и Andrew Hussie" class="comics-section">
+      <h2>Homestuck и Andrew Hussie</h2>
+      <div class="comics-image-wrapper">
+        <img src="Homestuck.png" alt="Логотип " class="comics-image">
+      </div>
+      <p><strong>Тема и описание:</strong> Веб-комикс "Homestuck" - стал для нас открытием в этом году (на момент 2026), открыв порывы для творчерства, изуения кода и тд.Также стала интересна личность создателя Andrew Hussie: О котором вы можете узнать в разделе "nice bro". Homestuck - Смесь безумия, хорооших артов, гифок, обсурдных диологов, шуток и моментами интерактивом, вы не пожалеете ни на грамм что начали читать его.</p>
+      <p><strong>Рецензия:</strong> Из прям БОЛЬШИХ минусов можно отметить то что в комиксе 8000 СТРАНИЦ! Но если вы увлечены историей, то для вас это не послужит большой проблемой. Мы ставим Homestuck 10/10.</p>
+      <ul>
+      </ul>
+    </section>
+
+    <!-- LinuxMint -->
+    <section id="LinuxMint" class="comics-section">
+      <h2>LinuxMint</h2>
+      <div class="comics-image-wrapper">
+        <img src="LinuxMint.png" alt="Логотип " class="comics-image">
+      </div>
+      <p><strong>Тема и описание:</strong> Линукс в наше время - это символ своободы в операционных системах. Мы же хотим выделить дистрибутив "LinuxMint", один из легких и по нашему мнению шикарных дистрибутивов, если вы хотите уловить философию линукса и свободного кода, то ставте на ваши устройства LinuxMint и не парьтесь.</p>
+      <p><strong>Рецензия:</strong> Как бы он не был хорош, все таки это линукс которым пользуется 4% всей планеты, придется привыкать и не факт что быстро, но еслли привыкнуть, то в целом это очень удобная система которой мы ставим 8/10.</p>
+      <ul>
+      </ul>
+    </section>
+
+    <!-- Deadpool and wolverine -->
+    <section id="Deadpool and wolverine" class="comics-section">
+      <h2>Deadpool and Wolverine</h2>
+      <div class="comics-image-wrapper">
+        <img src="deadpool.png" alt="Логотип " class="comics-image">
+      </div>
+      <p><strong>Тема и описание:</strong> Фильм уже вышел несколько лет назад, но все ещё восхитительно смотрится, мы хотим выделить работу со звуком, не то что бы музыка в прошлых частях была плохой, но в третьей это великолепно. Чего оставляет только общая картина фильма и музыка NSYNC.</p>
+      <p><strong>Рецензия:</strong>Фильм сто процентов нужно посмотреть даже если вы его уже смотрели, мы же быз лишних слов ставим 10/10.</p>
+      <ul>
+      </ul>
+    </section>
+
+      <!-- IPhone Duo -->
+    <section id="IPhone Duo" class="comics-section">
+      <h2>IPhone Duo</h2>
+      <div class="comics-image-wrapper">
+        <img src=".png" alt="Логотип " class="comics-image">
+      </div>
+      <p><strong>Тема и описание:</strong> Раскладушка от APPLE, телефон о котором наверное никто не просил(.</p>
+      <p><strong>Рецензия:</strong>Ладно, все-таки было интересно посмотреть как apple сделают свою раскладушку. Главные проблемы iPhone Duo связаны с хрупкостью внутреннего гибкого экрана, уязвимостью шарнира к грязи и сырым программным обеспечением. Бонально стоит посмотреть на те же приложения яндекса, хотя для кого-то не самый лучший пример. Мы пока поставим IPhone Duo 6/10.</p>
+      <ul>
+      </ul>
+    </section>
+
+      <!-- Mac system 1 -->
+    <section id="System 1" class="comics-section">
+      <h2>System 1</h2>
+      <div class="comics-image-wrapper">
+        <img src="System 1.png" alt="Логотип " class="comics-image">
+      </div>
+      <p><strong>Рецензия и..:</strong> Не уходя далко от компании apple, мы хотели бы вам напомнить про Machintosh System 1. А именно больше поразмыслеть как бы эта система и её цвета сочитались с нынешними приложениями и браузерами. Может используя линукс, восоздав такую оболочку получиться добиться такого результата. На то время это была хорошая система, ставим ей 9/10.</p>
+      <ul>
+      </ul>
+    </section>
+
+    <section id="about-site">
+      <h2>О проекте</h2>
+      <p>Это так называемая "Комната рецензий". Тут мы высказываем своё мнение о том, о сем. О чём мы хотим крч.</p>
+      <div class="note">Примечание: все данные приведены в ознакомительных целях. Для глубокого изучения рекомендуем официальные источники и профильные издания.</div>
+    </section>
+  </div>
+
+  <!-- Скрипт поиска -->
+  <script>
+    const searchInput = document.getElementById('search-input');
+    const sections = document.querySelectorAll('.comics-section');
+
+    function filterSections() {
+      const term = searchInput.value.toLowerCase();
+
+      sections.forEach(section => {
+        const text = section.innerText.toLowerCase();
+        if (text.includes(term)) {
+          section.style.display = 'block';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    }
+
+    searchInput.addEventListener('input', filterSections);
+  </script>
+</body>
+</html>

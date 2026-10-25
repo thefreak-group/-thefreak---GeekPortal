@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Comics retrospective</title>
+  <style>
+    body {
+      background-color: #f7f6f5;
+      color: #000;
+      font-family: Georgia, "Times New Roman", serif;
+      margin: 0;
+      padding: 0 16px;
+      line-height: 1.6;
+    }
+
+    header {
+      border-bottom: 2px solid #999;
+      padding: 16px 0;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 0;
+      text-align: center;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    nav a {
+      color: #1144cc;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    /* Поиск */
+    #search-box-container {
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      background: #fff;
+      padding: 12px;
+    }
+
+    #search-input {
+      width: 100%;
+      padding: 6px;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border: 1px solid #aaa;
+      margin-bottom: 24px;
+    }
+
+    th, td {
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #e9e9e9;
+      font-weight: normal;
+      text-align: left;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-top: 24px;
+      margin-bottom: 8px;
+      border-bottom: 1px dashed #999;
+    }
+
+    p {
+      margin: 8px 0;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 4px 0;
+    }
+
+    /* Картинка комикса */
+    .company-image-wrapper {
+      margin: 12px 0;
+      text-align: center;
+    }
+
+    .company-image {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #ddd;
+      background: #eee;
+    }
+
+    .note {
+      font-style: italic;
+      color: #555;
+      font-size: 13px;
+      margin-top: 12px;
+    }
+
+    footer {
+      margin-top: 32px;
+      border-top: 1px solid #ccc;
+      padding-top: 12px;
+      text-align: center;
+      font-size: 13px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Comics retrospective</h1>
+      <nav>
+        <a href="#comics-list">Список комиксов</a> |
+        <a href="#about-site">О проекте</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Блок поиска -->
+    <div id="search-box-container">
+      <input type="text" id="search-input" placeholder="Поиск комикса (например:The Amazing Spider-Man #001 )...">
+      <div id="search-hint" style="margin-top:6px; font-size:12px; color:#666;">Поиск по названиям и описаниям комикса</div>
+    </div>
+
+    <section id="comics-list">
+      <h2>Список комиксов</h2>
+      <p>Ниже — подборка комиксов и краткие сведения о них.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Комикс</th>
+            <th>Камео</th>
+            <th>Год издания</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#The Amazing Spider-Man #001">The Amazing Spider-Man #001</a></td>
+            <td>Фантастическая Четвёрка</td>
+            <td>1 марта 1963</td>
+          </tr>
+          <tr>
+            <td><a href="#The Amazing Spider-Man #002">The Amazing Spider-Man #002</a></td>
+            <td></td>
+            <td>1 мая 1963</td>
+          </tr>
+          <tr>
+            <td><a href="#The Amazing Spider-Man #003">The Amazing Spider-Man #003</a></td>
+            <td></td>
+            <td>1 июля 1963</td>
+          </tr>
+          <tr>
+            <td><a href="#The Amazing Spider-Man #004">The Amazing Spider-Man #004</a></td>
+            <td></td>
+            <td>1 сентября 1963</td>
+          </tr>
+          <tr>
+            <td><a href="#The Amazing Spider-Man #005">The Amazing Spider-Man #005</a></td>
+            <td></td>
+            <td>1 октября 1963</td>
+          </tr>
+          <tr>
+            <td><a href="#The Amazing Spider-Man #006">The Amazing Spider-Man #006</a></td>
+            <td></td>
+            <td>1 ноября 1963</td>
+          </tr>
+          <tr>
+          <td><a href="#The Amazing Spider-Man #007">The Amazing Spider-Man #007</a></td>
+            <td></td>
+            <td>1 декабря 1963</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </section>
+
+    <!-- The Amazing Spider-Man #001 -->
+    <section id="The Amazing Spider-Man" class="comics-section">
+      <h2>The Amazing Spider-Man #001</h2>
+      <div class="comics-image-wrapper">
+        <!-- Сюда подставляется картинка. Если картинки нет, будет рамка с фоном -->
+        <img src="The Amazing Spider-Man 001.png" alt="Обложка комикса" class="comics-image">
+      </div>
+      <p><strong>Ретроспектива:</strong> История парня которого зовут - Питер Паркер начинается здесь.</p>
+      <p><strong>Статья:</strong> В первом номере после дебюта в Amazing fantasy, герой понимая что после получения супер сил денег не прибавилось, решает набиться в команду фантастической четверки, проникнув туда и отделав всю команду паучок узнает что Фантастическая четверка некоммерческая организация и уходит.</p>
+      <ul>
+      </ul>
+    </section>
+
+    <!-- The Amazing Spider-Man #002 -->
+    <section id="The Amazing Spider-Man #002" class="comics-section">
+      <h2>The Amazing Spider-Man #002</h2>
+      <div class="comics-image-wrapper">
+        <img src="The Amazing Spider-Man 002.png" alt="Логотип " class="comics-image">
+      </div>
+      <p><strong>Ретроспектива:</strong>В Нью-Йорке объявляется новый суперзлодей — Стервятник.</p>
+      <p><strong>Статья:</strong> Старый инженер, создавший специальный электромагнитный костюм с крыльями, позволяющий ему бесшумно и быстро летать. Он грабит банки и ювелирные магазины.Тётя Мэй испытывает серьёзные финансовые трудности, и Питер отчаянно нуждается в деньгах.Он решает сфотографировать Стервятника в деле и продать эксклюзивные снимки редактору «Daily Bugle» Дж. Джоне Джеймсону.В первой схватке Стервятник побеждает Человека-паука и сбрасывает его в резервуар с водой. Сделав выводы из поражения, Питер изобретает специальный антимагнитный инвертор, который нарушает работу крыльев Стервятника. Во время повторной встречи Паук использует прибор, обезвреживает злодея, передает его полиции и получает гонорар за фотографии от Джеймсона.</p>
+      <ul>
+      </ul>
+    </section>
+
+    <!-- The Amazing Spider-Man #003 -->
+    <section id="The Amazing Spider-Man #003" class="comics-section">
+      <h2>The Amazing Spider-Man #003</h2>
+      <div class="comics-image-wrapper">
+        <img src="The Amazing Spider-Man 003.png" alt="Логотип " class="comics-image">
+      </div>
+      <p><strong>Ретроспектива:</strong> Комикс рассказывает о первом появлении и происхождении культового противника Человека-паука — Доктора Осьминога (Отто Октавиуса).</p>
+      <p><strong>Статья:</strong> Известный ученый-атомщик доктор Отто Октавиус работал над проектом с использованием четырех механических титаново-стальных щупалец, которыми он управлял силой мысли. Во время лабораторного эксперимента происходит мощный взрыв. Радиация вызывает повреждения мозга ученого, а сами механические щупальца намертво срастаются с его телом. Отто сходит с ума и берет себе имя Доктор Осьминог.Тут впервые из-за сокрушительного поражения Питер Паркер впадает в отчаяние и всерьез задумывается о том, чтобы бросить карьеру супергероя. Однако воодушевляющая речь Человека-факела (Джонни Шторма), выступающего перед школьниками, возвращает Питеру уверенность в себе.Доктора помещают в частную клинику, но из-за поврежденной психики он сбегает, берет заложников и требует предоставить ему оборудование для продолжения своих научных изысканий. Редактор Джей Джона Джеймсон поручает Питеру Паркеру сделать эксклюзивные снимки нового злодея для газеты.Человек-паук разрабатывает тактику. Он использует специальное химическое устройство, чтобы связать или расплавить механизмы врага, метким броском паутины ослепляет Октавиуса (залепляя его очки) и одерживает победу.</p>
+      <ul>
+      </ul>
+    </section>
+
+    <!-- The Amazing Spider-Man #004 -->
+    <section id="The Amazing Spider-Man #004" class="comics-section">
+      <h2>The Amazing Spider-Man #004</h2>
+      <div class="comics-image-wrapper">
+        <img src="The Amazing Spider-Man 004.png" alt="Логотип " class="comics-image">
+      </div>
+      <p><strong>Ретроспектива:</strong> В этом номере впервые появляется классический злодей Песочный Человек (Флинт Марко).</p>
+      <p><strong>Статья:</strong> Сбежавший из тюрьмы преступник Флинт Марко скрывается от погони на пляже, где попадает под воздействие радиоактивного взрыва (в результате эксперимента на ядерной установке). Радиация изменяет структуру его тела: он получает способность превращаться в песок и управлять им.Песочный Человек приходит в школу Питера Паркера (Midtown High School), спасаясь от полиции. Между ним и Человеком-Пауком завязывается ожесточенная схватка. Питер понимает, что песочное тело врага неуязвимо для обычных ударов. Он использует школьный промышленный пылесос (или мощное уборочное устройство), чтобы затянуть в него Флинта Марко, а затем помещает песок в специальный герметичный бак и сдает злодея полиции.</p>
+      <ul>
+      </ul>
+    </section>
+
+    <!-- The Amazing Spider-Man #005 -->
+    <section id="The Amazing Spider-Man #005" class="comics-section">
+      <h2>The Amazing Spider-Man #005</h2>
+      <div class="comics-image-wrapper">
+        <img src="The Amazing Spider-Man 005.png" alt="Логотип " class="comics-image">
+      </div>
+      <p><strong>Ретроспектива:</strong>  Появляется страшный Доктор ДУМ.</p>
+      <p><strong>Статья:</strong> Выпуск начинается с того, что Доктор Дум подслушивает новостной репортаж Дж. Джоны Джеймсона, в котором тот вновь заявляет, что Человек-паук является угрозой, и предлагает награду в 1000 долларов тому, кто сможет раскрыть ему истинную личность Человека-паука. Доктор Дум, недавно потерпевший поражение от Фантастической четвёрки, считает, что Человек-паук станет отличным союзником в мести им, и поэтому он посылает сообщение Человеку-пауку через его паучье чутьё, используя паука и электронное оборудование. Тем временем Питер Паркер всё больше разочаровывается из-за оскорблений и травли, которым он подвергается со стороны других учеников в школе.Разозленный отказом, Дум похищает одноклассника Питера — Флэша Томпсона, приняв его за Человека-паука.Питер отправляется спасать Флэша, сражается с роботами и приспешниками Дума, а затем на помощь подоспевает Фантастическая четверка, после чего Доктор Дум сбегает.</p>
+      <ul>
+      </ul>
+    </section>
+
+    <!-- The Amazing Spider-Man #006 -->
+    <section id="The Amazing Spider-Man #006" class="comics-section">
+      <h2>The Amazing Spider-Man #006</h2>
+      <div class="comics-image-wrapper">
+        <img src="The Amazing Spider-Man 006.png" alt="Логотип " class="comics-image">
+      </div>
+      <p><strong>Ретроспектива:</strong> Первое появление доктора Коннорса.</p>
+      <p><strong>Статья:</strong> Из болот во Флориде, из Эверглейдс, поступают странные сообщения о существе, наполовину ящерице, наполовину человеке, которое нападает на людей. Новости об этом медленно расползаются по всей стране. Тем временем в Нью-Йорке Дж. Джона Джеймсон через газету «Дейли Бьюгл» бросает Человеку-пауку вызов: победить загадочного Ящера.Решив принять вызов, Питер приходит к своему боссу Джеймсону и просит отправить его во Флориду, чтобы сделать снимки Ящера, хотя его истинная цель — сразиться и победить буйствующее существо.Человек-паук проникает в лабораторию/убежище Коннорса в болоте, разрабатывает химическое противоядие с помощью записей ученого и побеждает Ящера, возвращая ему человеческий облик.Доктор Коннорс приходит в себя и не помнит о своих злодеяниях в образе Ящера. Джеймсон же, как обычно, скептически и с недоверием относится к героическому поступку Паука.</p>
+      <ul>
+      </ul>
+    </section>
+
+    <!-- The Amazing Spider-Man #007 -->
+    <section id="The Amazing Spider-Man #007" class="comics-section">
+      <h2>The Amazing Spider-Man #007</h2>
+      <div class="comics-image-wrapper">
+        <img src="The Amazing Spider-Man 007.png" alt="Логотип " class="comics-image">
+      </div>
+      <p><strong>Ретроспектива:</strong> Возвращения старого знакомого.</p>
+      <p><strong>Статья:</strong> После того как Стервятник был отправлен в тюрьму во втором выпуске, он, будучи образцовым заключённым, заработал право пользоваться тюремной мастерской. Там он тайно сконструировал самодельную летающую установку, чтобы совершить побег.
+
+Питер Паркер, услышав о побеге, быстро направляется домой, чтобы переодеться в Человека-паука и снова задержать Стервятника.
+
+Взяв с собой анти-магнитный инвертор, который он использовал против Стервятника в их первой схватке, Питер не осознаёт, что Стервятник модифицировал свои крылья. Теперь они не только лучше летают и маневрируют, но и больше не подвержены воздействию инвертора, с помощью которого Человек-паук одолел его в прошлый раз. Стервятник врывается в редакцию газеты Daily Bugle, требуя выплаты денег.  Раненый Человек-паук вступает во второй бой со Стервятником — в стенах офиса газеты и в воздухе. Используя новые трюки и самодельный веб-парашют, он одолевает злодея и сдает его полиции. После этого он заклеивает рот паутиной вечно недовольному редактору Джей Джону Джеймисону и скрывается.</p>
+      <ul>
+      </ul>
+    </section>
+
+    <section id="about-site">
+      <h2>О проекте</h2>
+      <p>Это небольшая ретро-энциклопедия комиксов The Amazing Spider-Man. Она сделана в стиле старой Википедии: минимум графики, максимум читаемости, простая структура и понятные таблицы. .</p>
+      <div class="note">Примечание: все данные приведены в ознакомительных целях. Для глубокого изучения рекомендуем официальные источники и профильные издания.</div>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2026 Ретро-энциклопедия комиксов. Проект для обучения и демонстрации.
+  </footer>
+
+  <!-- Скрипт поиска -->
+  <script>
+    const searchInput = document.getElementById('search-input');
+    const sections = document.querySelectorAll('.comics-section');
+
+    function filterSections() {
+      const term = searchInput.value.toLowerCase();
+
+      sections.forEach(section => {
+        const text = section.innerText.toLowerCase();
+        if (text.includes(term)) {
+          section.style.display = 'block';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    }
+
+    searchInput.addEventListener('input', filterSections);
+  </script>
+</body>
+</html>
